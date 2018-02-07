@@ -38,20 +38,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <header class="w3-container w3-blue w3-center" style="padding: 48.5px 0px">
   <div class="w3-row-padding w3-blue w3-padding-64 w3-container">
     <div class="w3-content">
-          <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    <form action="relation/register.php" method="POST" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
       <h2 class="w3-center">Contact Us</h2>
 
       <div class="w3-row w3-section">
         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
           <div class="w3-rest">
-            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
-          </div>
-      </div>
-
-      <div class="w3-row w3-section">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-          <div class="w3-rest">
-            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+            <input class="w3-input w3-border" name="username" type="text" placeholder="username">
           </div>
       </div>
 
@@ -65,7 +58,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-row w3-section">
         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
           <div class="w3-rest">
-            <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+            <input class="w3-input w3-border" name="password" type="password" placeholder="password">
           </div>
       </div>
 

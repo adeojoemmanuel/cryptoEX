@@ -1,6 +1,6 @@
 <?php
-function load($class){
-    include($class .".php");
+  function load($class){
+    include('../backend/'. $class .".php");
   }
   load('IOhander');
   

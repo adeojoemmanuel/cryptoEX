@@ -16,8 +16,8 @@
 		}
 
 		public function logincheck($username) {
-		    $stmt = $this->DBcon->prepare("SELECT _email, _username FROM _users WHERE _email = :email or _username = :username");
-		    $stmt->execute(array(':email' => $username, ':username' => $username));
+		    $stmt = $this->DBcon->prepare("SELECT * FROM users WHERE email = :email");
+		    $stmt->execute(array(':email' => $username));
 		    if($stmt->rowCount() > 0){
 		        return 'exist';
 		    } else {
@@ -132,8 +132,8 @@
 			$input=preg_replace("#[^0-9a-z]#i","",$input);
 	    }
 	    
-	    public function login($username, $password, $table, $dbtable, $orderparams){
-		    $query = $DBcon->prepare("SELECT * FROM $table WHERE $dbtable='$username' ORDER BY $orderparams DESC limit 1");
+	    public function login($email, $password, $table, $dbtable, $orderparams){
+		    $query = $this->DBcon->prepare("SELECT * FROM {$table} WHERE {$email}={$dbtable} ORDER BY {$orderparams} DESC limit 1");
 		    $vee=$query->execute();
 		    $row=$vee->fetch_array();
 		    $count=$query->num_rows;
