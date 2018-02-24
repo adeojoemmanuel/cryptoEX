@@ -97,28 +97,10 @@
                   </ul>
                 </li>
                 <!-- Messages                        -->
-                <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope-o"></i><span class="badge bg-orange">10</span></a>
-                  <ul aria-labelledby="notifications" class="dropdown-menu">
-                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                        <div class="msg-profile"> <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                        <div class="msg-body">
-                          <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
-                        </div></a></li>
-                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                        <div class="msg-profile"> <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                        <div class="msg-body">
-                          <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
-                        </div></a></li>
-                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                        <div class="msg-profile"> <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle"></div>
-                        <div class="msg-body">
-                          <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
-                        </div></a></li>
-                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>Read all messages    </strong></a></li>
-                  </ul>
-                </li>
+                
+                
                 <!-- Logout    -->
-                <li class="nav-item"><a href="login.html" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+                 <li class="nav-item"><a href="relation/logout.php" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
               </ul>
             </div>
           </div>
@@ -128,11 +110,25 @@
         <!-- Side Navbar -->
         <nav class="side-navbar">
           <!-- Sidebar Header-->
+           <?php 
+                $user = $io->getOne("SELECT * FROM users WHERE id=" .$_SESSION['userid']);
+            
+                 $email = $user['email'];
+                  $parts = explode('@', $email);
+                  $emailn = $parts[0];
+                  $domain = "@" . $parts[1];
+            ?>
+             <style>
+               .pname{
+                  width: 5px;
+                  height: 10px;
+               }
+          </style>
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4">Mark Stephen</h1>
-              <p>Web Designer</p>
+             <h1 class="h3 pname" ><?php echo  $emailn ?></h1>
+              <p style="width: 4px; height: 4px;"><?php echo  $user['email']; ?></p>
             </div>
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
