@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 24, 2018 at 11:30 AM
+-- Generation Time: Feb 24, 2018 at 12:13 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -33,6 +33,20 @@ CREATE TABLE `approvetrans` (
   `sellerID` int(255) NOT NULL,
   `buyerID` int(255) NOT NULL,
   `dateApproved` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notifications`
+--
+
+CREATE TABLE `notifications` (
+  `id` int(255) NOT NULL,
+  `userid` int(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -91,7 +105,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `activationKey`, `isactive`, `disabled`, `dateRegistered`) VALUES
-(2, 'imm', '$2y$10$Y6vTneo4MaP92wBJNNn2Mu5XFLW9YHMHCOqPPtpHu05VxiKh8O5Au', 'emmanuel.adeojo@yahoo.com', '', 0, 0, '2018-02-22 12:32:04'),
+(2, 'imm', '$2y$10$Y6vTneo4MaP92wBJNNn2Mu5XFLW9YHMHCOqPPtpHu05VxiKh8O5Au', 'emmanuel.adeojo@yahoo.com', '', 1, 0, '2018-02-22 12:32:04'),
 (3, '.', '$2y$10$tZRJ/AxKT5L.Tn1SRSci4ePcyb57x99D49WRSl827iE8NTWnBzEyq', '', '', 0, 0, '2018-02-22 12:32:04'),
 (4, 'imm.emmanuel', '$2y$10$JOISQFGclPVw1fu38C4qr.HEBRrEf7.D.9x5oEK9MHXduskD4Izfq', 'adeojo.emmanuel@iodevtech.com', '', 1, 0, '2018-02-22 12:32:04'),
 (6, 'alao.praise', '$2y$10$HwQ9o/8Fi1.TXlEx4.iMluHoz4QG6QVwSKWy2.m9K73Nrh/l4USfS', 'alaodavid@yahoo.com', 'e4dbe20a2f40d1e45df274bb8a1f8a8d17f0b798', 1, 0, '2018-02-22 12:48:36');
@@ -99,6 +113,12 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `activationKey`, `is
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `notifications`
+--
+ALTER TABLE `notifications`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `offers`
@@ -122,6 +142,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `notifications`
+--
+ALTER TABLE `notifications`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `offers`
 --
