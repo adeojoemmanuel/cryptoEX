@@ -6,6 +6,7 @@
         	$this->DBcon = $db->startConn();
 		}
 
+
 		public function getAll($table){
 			$SQL = "SELECT * from $table";
 			$q = $this->DBcon->query($SQL) or die("Failed");
@@ -270,7 +271,7 @@
 	    }
 
 	    public function usernameCheck($email) {
-		    $stmt = $this->DBcon->prepare("SELECT _email FROM _users WHERE _email = :email");
+		    $stmt = $this->DBcon->prepare("SELECT _email FROM users WHERE email = :email");
 		    $stmt->execute(array(':email' => $email));
 		    if($stmt->rowCount() > 0){
 		        return 'exist';
