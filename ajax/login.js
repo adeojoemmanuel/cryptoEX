@@ -10,7 +10,7 @@ $(document).ready(function(){
 		   	success: function(response){    
 				if(response=="success"){
 			    	$("#login").html('<img src="ajaxLoader.gif"/> &nbsp; Signing In ...');
-			    	setTimeout(' window.location.href = "dashboard.php"; ',4000);
+			    	setTimeout(' window.location.href = "dashboard.php"; ',1000);
 			    }else{    
 			    	$("#error").fadeIn(1000, function(){      
 			    		$("#error").html('<div class="alert alert-danger"> &nbsp; ' + response + ' !</div>');
