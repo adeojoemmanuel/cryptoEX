@@ -17,20 +17,20 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">CryptoEx</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="register.php">Register</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="index.php">Trade</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,6 +41,9 @@
           <a class="dropdown-item" href="#">Ethereum</a>
           <a class="dropdown-item" href="#">Ripple</a>
         </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.php">Login</a>
       </li>
     </ul>
   </div>
@@ -70,8 +73,8 @@
           <input type="submit" id="login" class="btn btn-primary btn-block" href="" value="Login">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
-          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+          <a class="d-block small mt-3" href="register.php">Register an Account</a>
+          <a class="d-block small" href="forgot-password.php">Forgot Password?</a>
         </div>
       </div>
     </div>
