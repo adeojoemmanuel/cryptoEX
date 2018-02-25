@@ -63,7 +63,7 @@
 
   
 
-  $verisymail = usernameCheck($email);
+  $verisymail = $class->usernameCheck($email);
   $random = sha1(md5(random_char('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')));
   $isactive = '0';
   $disabled = '0';

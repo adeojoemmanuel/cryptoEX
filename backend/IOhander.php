@@ -271,7 +271,7 @@
 	    }
 
 	    public function usernameCheck($email) {
-		    $stmt = $this->DBcon->prepare("SELECT _email FROM users WHERE email = :email");
+		    $stmt = $this->DBcon->prepare("SELECT email FROM users WHERE email = :email");
 		    $stmt->execute(array(':email' => $email));
 		    if($stmt->rowCount() > 0){
 		        return 'exist';
