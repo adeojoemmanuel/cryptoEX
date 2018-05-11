@@ -17,35 +17,34 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">CryptoEx</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="register.php">Register</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="dashboard.php">Trade</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Crypto
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Bitcoin</a>
-          <a class="dropdown-item" href="#">Ethereum</a>
-          <a class="dropdown-item" href="#">Ripple</a>
-        </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="login.php">Login</a>
-      </li>
-    </ul>
+  <div class="container">
+    <a class="navbar-brand" href="index.php">CryptoEx</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="register.php">Register</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="d2.php">Trade</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Crypto
+          </a>
+          <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Bitcoin</a>
+            <a class="dropdown-item" href="#">Ethereum</a>
+            <a class="dropdown-item" href="#">Ripple</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
