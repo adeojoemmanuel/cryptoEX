@@ -37,7 +37,6 @@
           <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Bitcoin</a>
             <a class="dropdown-item" href="#">Ethereum</a>
-            <a class="dropdown-item" href="#">Ripple</a>
           </div>
         </li>
         <li class="nav-item active">

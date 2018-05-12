@@ -30,19 +30,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="d2.php">Trade</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Crypto
-          </a>
-          <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Bitcoin</a>
-            <a class="dropdown-item" href="#">Ethereum</a>
-            <a class="dropdown-item" href="#">Ripple</a>
-          </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="login.php">Login</a>
-        </li>
       </ul>
     </div>
   </div>
