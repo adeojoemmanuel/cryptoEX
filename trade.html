@@ -99,7 +99,7 @@
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-             <h1 class="h3 pname" ></h1>
+             <h1 class="h3 pname" >Damilola</h1>
               <p style="width: 4px; height: 4px;"></p>
             </div>
           </div>
@@ -107,67 +107,64 @@
           <ul class="list-unstyled">
                       <li class="active"><a href="index.html"> <i class="icon-home"></i>Dashboard</a></li>
                       <li><a href="tables.html"> <i class="icon-grid"></i>Wallets</a></li>
+                      <li><a href="forms.html"> <i class="icon-padnote"></i>Exchange Currency</a></li>
                       <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Transaction</a></li>
-                      <li><a href="forms.html"> <i class="icon-padnote"></i>Beneficiaries </a></li>
-                      <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Exchange Currency</a>
-                        <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                          <li><a href="#">Bitcoin</a></li>
-                          <li><a href="#">Ethereum</a></li>
-                          <li><a href="#">Ripple</a></li>
-                        </ul>
-                      </li>
-          </ul><span class="heading">Tools</span>
-          <ul class="list-unstyled">
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
-            <li> <a href="#"> <i class="icon-screen"></i>Help </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
         </nav>
-        <div class="content-inner">
+        <div class="content-inner bg-light">
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
               <h2 class="no-margin-bottom">Dashboard</h2>
             </div>
           </header>
-          <!-- Dashboard Counts Section-->
-          <section class="dashboard-counts no-padding-bottom">
-              <div class="justify-content-center">
-            <div class="card" style="width: 95%;height: 500px;margin-left: 2.5%;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-sm-6">
-            <div class="card" style="height: 150px;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
-            </div>
-            <div class="col-sm-6">
-            <div class="card" style="height:150px">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
-            </div>
-          </div>
-            </div>
-          </section>
 
-    <!-- Javascript files-->
+
+          <div style="width:80%;margin-top:5%;margin-left:10%">
+          <span style="margin-top:5%;margin-bottom:1%;">I GIVE</span>
+          <div class="input-group input-group-lg">
+            <input class="form-control" type="text" placeholder="Amount" >
+              <select class="form-control form-control-lg" id="inputGroupSelect03">
+                <option selected></option>
+                <option value="1">Naira</option>
+                <option value="2">US Dollars</option>
+                <option value="3">Bitcoin</option>
+                <option value="4">Ethereum</option>
+              </select>
+          </div>
+              <p style="margin-top:1%;">I RECEIVE</p>
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="text" placeholder="Readonly input here…" id="recmon" readonly>
+                  <select class="form-control form-control-lg" id="inputGroupSelect03">
+                    <option selected></option>
+                    <option value="1">Naira</option>
+                    <option value="2">US Dollars</option>
+                    <option value="3">Bitcoin</option>
+                    <option value="4">Ethereum</option>
+                  </select>
+              </div>
+              <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg">Exchange</button>
+            </div>
+
+
+
+          <!-- Page Footer-->
+                    <footer class="main-footer bg-primary fixed-bottom">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>CryptoEx &copy; 2018</p>
+                          </div>
+                          <div class="col-sm-6 text-right">
+                            <p>Design by <a href="#" class="external">CryptoEx</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+              <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
