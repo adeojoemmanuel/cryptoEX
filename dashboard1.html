@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crypto EX</title>
+    <title>CryptoEX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
@@ -107,15 +107,15 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
-            <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
-            <li class="active"><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
-            <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
-            <li><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
+                      <li class="active"><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
+                      <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
+                      <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
+                      <li><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
         </nav>
-        <div class="content-inner bg-light">
+        <div class="content-inner">
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
@@ -123,84 +123,82 @@
             </div>
           </header>
 
-          <div class="" style="width:95%;margin-left:2.5%; margin-top:2%;" >
-          <div class="row justify-content-around">
-          <div class="col-sm-5 ">
-            <div class="card">
-              <div class="card-body">
-              <h4 class="card-title">Bitcoin <!-- <div class="text-right" style=""><img src="XBT.png" alt="" width="48" height="48"></div> --></h4>
+          <div class="card" style="width: 95%;margin-top:10px;height: 500px;margin-left:2.5%">
+            <div class="card-head" style="margin-top:1%;margin-left:1%;">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Bitcoin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Ethereum</a>
+                </li>
+              </ul>
 
-              <!-- <img src="XBT.png" alt="" width="48" height="48"> -->
-              <p class="card-text">Balance <br> <span>BTC 0.00</span></p>
-              <p class="card-text">Address <br> 12AaMuRnzw6vW6s2KPRAGeX53meTf8JbZS <span style="margin: 0 10px"><a href="#" class="btn btn-primary btn-sm">Copy</a></span></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Buy</a>
-                <a href="#" class="btn btn-outline-primary">Sell</a>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="card">
-              <div class="card-body">
-              <h4 class="card-title">Ethereum</h4>
-              <p class="card-text">Balance <br> <span>ETH 0.00</span></p>
-              <p class="card-text">Address <br> 12AaMuRnzw6vW6s2KPRAGeX53meTf8JbZS <span style="margin: 0 10px"><a href="#" class="btn btn-primary btn-sm">Copy</a></span></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Buy</a>
-                <a href="#" class="btn btn-outline-primary">Sell</a>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="" style="width:95%;margin-left:2.5%;" >
-      <div class="row justify-content-around">
-      <div class="col-sm-5 ">
-        <div class="card">
-          <div class="card-body">
-          <h4 class="card-title">Naira</h4>
-          <p class="card-text">Balance <br> <span>NGN 0.00</span></p>
-          <p class="card-text">Available <br> <span>NGN 0.00</span></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Withdraw</a>
-            <a href="#" class="btn btn-outline-primary">Deposit</a>
+            </div>
+
+            <div class="" style="width:95%;margin-left:2.5%;" >
+            <div class="row justify-content-around">
+            <div class="col-sm-5 ">
+            <div class="card" style="height:230px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-5">
+            <div class="card" style="height:230px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-5">
-        <div class="card">
-          <div class="card-body">
-          <h4 class="card-title">US Dollar</h4>
-          <p class="card-text">Balance <br> <span>USD 0.00</span></p>
-          <p class="card-text">Available <br> <span>USD 0.00</span></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Withdraw</a>
-            <a href="#" class="btn btn-outline-primary">Deposit</a>
-          </div>
-      </div>
-      </div>
-    </div>
-  </div>
 
 
           <!-- Page Footer-->
-          <footer class="main-footer bg-primary fixed-bottom">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p>CryptoEx &copy; 2018</p>
-                </div>
-                <div class="col-sm-6 text-right">
-                  <p>Design by <a href="#" class="external">CryptoEx</a></p>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
+                    <footer class="main-footer bg-primary fixed-bottom">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>CryptoEx &copy; 2018</p>
+                          </div>
+                          <div class="col-sm-6 text-right">
+                            <p>Design by <a href="#" class="external">CryptoEx</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
               <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>

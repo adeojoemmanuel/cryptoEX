@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CryptoEX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- animate-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar bg-primary">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                 <div class="brand-text brand-big"><strong>CryptoEx</strong></div>
+                  <div class="brand-text brand-small"><strong>CE</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active animated infinite rubberBand"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+                <!-- Notifications-->
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Messages                        -->
+
+
+                <!-- Logout    -->
+                 <li class="nav-item"><a href="relation/logout.php" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+             <style>
+               .pname{
+                  width: 5px;
+                  height: 10px;
+               }
+          </style>
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="title">
+             <h1 class="h3 pname" >Damilola</h1>
+              <p style="width: 4px; height: 4px;"></p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <ul class="list-unstyled">
+            <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
+            <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
+            <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
+            <li class="active"><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
+            <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
+            <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
+          </ul>
+        </nav>
+        <div class="content-inner bg-light">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Dashboard</h2>
+            </div>
+          </header>
+
+
+          <div class="card" style="height: 95%;">
+            <div class="row justify-content-around" style="width:95%;margin-left:2.5%;margin-top:5%;">
+            <div class="col-sm-5 ">
+            <div class="card" style="height:auto">
+            <div class="card-head text-center" style="margin-top:2%">
+                <h3>Profile</h3>
+              </div>
+            <div class="card-body">
+                <label>Name</label>
+                <input type="text" readonly class="form-control-plaintext text-right" placeholder="Damilola Obi">
+                <label>Email</label>
+                <input type="text" readonly class="form-control-plaintext text-right" placeholder="email@example.com">
+                <label>Phone number</label>
+                <input type="text" readonly class="form-control-plaintext text-right" placeholder="080********">
+                <label>Country</label>
+                <input type="text" readonly class="form-control-plaintext text-right" placeholder="Nigeria">
+                <label>Language</label>
+                <input type="text" readonly class="form-control-plaintext text-right" placeholder="English">
+                <label>Verification</label>
+                <span class="float-right"><a data-toggle="modal" data-target="#exampleModal5">Not Verified</a></span>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-5">
+            <div class="card" style="height:300px">
+              <div class="card-head text-center" style="margin-top:2%">
+                  <h3>Security</h3>
+                </div>
+            <div class="card-body" style="width:100%;margin-top:2%">
+                  <ul class="li"><a data-toggle="modal" data-target="#exampleModal">Password</a></ul><hr>
+                  <ul class="li"><a data-toggle="modal" data-target="#exampleModal2">Two-factor authentication</a></ul><hr>
+                  <ul class="li"><a data-toggle="modal" data-target="#exampleModal3">Terms and conditions</a></ul><hr>
+                  <ul class="li"><a data-toggle="modal" data-target="#exampleModal4">Social Account</a></ul>
+                </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    1.You agree that you are authorized to transact in your juridiction and you aren't involved in any fraudulent activity whatsoever.<br>
+                    2.User accepts responsibility for the Bank account number, Bitcoin address or e-currency account which he/she provides. CryptoEx is not responsible for user's inputting wrong details, and only guarantees payment to the details input in the 'Bank Account No.' or 'Bitcoin Address.' or 'Digital Currency account' field.<br>
+                    3.User agrees that he/she is in good standing and has received his/her payments from all previous transactions from CryptoEx. (In other words, all of your previous orders have been paid out to your Bank account, BTC address or Digital Currency account and have been received by you).<br>
+                    4.User understands that any mistake made during fund transfer process to us is solely his/her responsibility. CryptoEx is not responsible for mistyped recipient account details when trying to send us funds.<br>
+                    5.User understands that while there isn't registration required to trade Digital Assets on the CryptoEx website, CryptoEx and/or it's affiliates reserves the right to demand for identification at it's discretion in order to finalize a transaction inline with regulatory Tiers provisions.<br>
+                    6.We reserve the right to modify the Terms and Condition at any time and without prior notice.<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    1.You agree that you are authorized to transact in your juridiction and you aren't involved in any fraudulent activity whatsoever.<br>
+                    2.User accepts responsibility for the Bank account number, Bitcoin address or e-currency account which he/she provides. CryptoEx is not responsible for user's inputting wrong details, and only guarantees payment to the details input in the 'Bank Account No.' or 'Bitcoin Address.' or 'Digital Currency account' field.<br>
+                    3.User agrees that he/she is in good standing and has received his/her payments from all previous transactions from CryptoEx. (In other words, all of your previous orders have been paid out to your Bank account, BTC address or Digital Currency account and have been received by you).<br>
+                    4.User understands that any mistake made during fund transfer process to us is solely his/her responsibility. CryptoEx is not responsible for mistyped recipient account details when trying to send us funds.<br>
+                    5.User understands that while there isn't registration required to trade Digital Assets on the CryptoEx website, CryptoEx and/or it's affiliates reserves the right to demand for identification at it's discretion in order to finalize a transaction inline with regulatory Tiers provisions.<br>
+                    6.We reserve the right to modify the Terms and Condition at any time and without prior notice.<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    1.You agree that you are authorized to transact in your juridiction and you aren't involved in any fraudulent activity whatsoever.<br>
+                    2.User accepts responsibility for the Bank account number, Bitcoin address or e-currency account which he/she provides. CryptoEx is not responsible for user's inputting wrong details, and only guarantees payment to the details input in the 'Bank Account No.' or 'Bitcoin Address.' or 'Digital Currency account' field.<br>
+                    3.User agrees that he/she is in good standing and has received his/her payments from all previous transactions from CryptoEx. (In other words, all of your previous orders have been paid out to your Bank account, BTC address or Digital Currency account and have been received by you).<br>
+                    4.User understands that any mistake made during fund transfer process to us is solely his/her responsibility. CryptoEx is not responsible for mistyped recipient account details when trying to send us funds.<br>
+                    5.User understands that while there isn't registration required to trade Digital Assets on the CryptoEx website, CryptoEx and/or it's affiliates reserves the right to demand for identification at it's discretion in order to finalize a transaction inline with regulatory Tiers provisions.<br>
+                    6.We reserve the right to modify the Terms and Condition at any time and without prior notice.<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel4">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    1.You agree that you are authorized to transact in your juridiction and you aren't involved in any fraudulent activity whatsoever.<br>
+                    2.User accepts responsibility for the Bank account number, Bitcoin address or e-currency account which he/she provides. CryptoEx is not responsible for user's inputting wrong details, and only guarantees payment to the details input in the 'Bank Account No.' or 'Bitcoin Address.' or 'Digital Currency account' field.<br>
+                    3.User agrees that he/she is in good standing and has received his/her payments from all previous transactions from CryptoEx. (In other words, all of your previous orders have been paid out to your Bank account, BTC address or Digital Currency account and have been received by you).<br>
+                    4.User understands that any mistake made during fund transfer process to us is solely his/her responsibility. CryptoEx is not responsible for mistyped recipient account details when trying to send us funds.<br>
+                    5.User understands that while there isn't registration required to trade Digital Assets on the CryptoEx website, CryptoEx and/or it's affiliates reserves the right to demand for identification at it's discretion in order to finalize a transaction inline with regulatory Tiers provisions.<br>
+                    6.We reserve the right to modify the Terms and Condition at any time and without prior notice.<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel5">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    1.You agree that you are authorized to transact in your juridiction and you aren't involved in any fraudulent activity whatsoever.<br>
+                    2.User accepts responsibility for the Bank account number, Bitcoin address or e-currency account which he/she provides. CryptoEx is not responsible for user's inputting wrong details, and only guarantees payment to the details input in the 'Bank Account No.' or 'Bitcoin Address.' or 'Digital Currency account' field.<br>
+                    3.User agrees that he/she is in good standing and has received his/her payments from all previous transactions from CryptoEx. (In other words, all of your previous orders have been paid out to your Bank account, BTC address or Digital Currency account and have been received by you).<br>
+                    4.User understands that any mistake made during fund transfer process to us is solely his/her responsibility. CryptoEx is not responsible for mistyped recipient account details when trying to send us funds.<br>
+                    5.User understands that while there isn't registration required to trade Digital Assets on the CryptoEx website, CryptoEx and/or it's affiliates reserves the right to demand for identification at it's discretion in order to finalize a transaction inline with regulatory Tiers provisions.<br>
+                    6.We reserve the right to modify the Terms and Condition at any time and without prior notice.<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+          <!-- Page Footer-->
+                    <footer class="main-footer bg-primary fixed-bottom">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>CryptoEx &copy; 2018</p>
+                          </div>
+                          <div class="col-sm-6 text-right">
+                            <p>Design by <a href="#" class="external">CryptoEx</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </footer>
+                  </div>
+              <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+    <script>
+      $( "#toggle-btn" ).click(function() {
+    			$( "#toggle-btn" ).removeClass( "animated" );
+    		});
+      </script>
+  </body>
+</html>

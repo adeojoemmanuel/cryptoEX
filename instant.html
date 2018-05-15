@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crypto EX</title>
+    <title>CryptoEX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
@@ -108,8 +108,8 @@
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
             <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
-            <li class="active"><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
-            <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
+            <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
+            <li class="active"><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
             <li><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
@@ -123,84 +123,49 @@
             </div>
           </header>
 
-          <div class="" style="width:95%;margin-left:2.5%; margin-top:2%;" >
-          <div class="row justify-content-around">
-          <div class="col-sm-5 ">
-            <div class="card">
-              <div class="card-body">
-              <h4 class="card-title">Bitcoin <!-- <div class="text-right" style=""><img src="XBT.png" alt="" width="48" height="48"></div> --></h4>
 
-              <!-- <img src="XBT.png" alt="" width="48" height="48"> -->
-              <p class="card-text">Balance <br> <span>BTC 0.00</span></p>
-              <p class="card-text">Address <br> 12AaMuRnzw6vW6s2KPRAGeX53meTf8JbZS <span style="margin: 0 10px"><a href="#" class="btn btn-primary btn-sm">Copy</a></span></p>
+          <div style="width:80%;margin-top:5%;margin-left:10%">
+          <span style="margin-top:5%;margin-bottom:1%;">I GIVE</span>
+          <div class="input-group input-group-lg">
+            <input class="form-control" type="text" placeholder="Amount" >
+              <select class="form-control form-control-lg" id="inputGroupSelect03">
+                <option selected></option>
+                <option value="1">Naira</option>
+                <option value="2">US Dollars</option>
+                <option value="3">Bitcoin</option>
+                <option value="4">Ethereum</option>
+              </select>
+          </div>
+              <p style="margin-top:1%;">I RECEIVE</p>
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="text" placeholder="Readonly input here…" id="recmon" readonly>
+                  <select class="form-control form-control-lg" id="inputGroupSelect03">
+                    <option selected></option>
+                    <option value="1">Naira</option>
+                    <option value="2">US Dollars</option>
+                    <option value="3">Bitcoin</option>
+                    <option value="4">Ethereum</option>
+                  </select>
               </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Buy</a>
-                <a href="#" class="btn btn-outline-primary">Sell</a>
-              </div>
+              <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg">Exchange</button>
             </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="card">
-              <div class="card-body">
-              <h4 class="card-title">Ethereum</h4>
-              <p class="card-text">Balance <br> <span>ETH 0.00</span></p>
-              <p class="card-text">Address <br> 12AaMuRnzw6vW6s2KPRAGeX53meTf8JbZS <span style="margin: 0 10px"><a href="#" class="btn btn-primary btn-sm">Copy</a></span></p>
-              </div>
-              <div class="card-footer text-right">
-                <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Buy</a>
-                <a href="#" class="btn btn-outline-primary">Sell</a>
-              </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="" style="width:95%;margin-left:2.5%;" >
-      <div class="row justify-content-around">
-      <div class="col-sm-5 ">
-        <div class="card">
-          <div class="card-body">
-          <h4 class="card-title">Naira</h4>
-          <p class="card-text">Balance <br> <span>NGN 0.00</span></p>
-          <p class="card-text">Available <br> <span>NGN 0.00</span></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Withdraw</a>
-            <a href="#" class="btn btn-outline-primary">Deposit</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <div class="card">
-          <div class="card-body">
-          <h4 class="card-title">US Dollar</h4>
-          <p class="card-text">Balance <br> <span>USD 0.00</span></p>
-          <p class="card-text">Available <br> <span>USD 0.00</span></p>
-          </div>
-          <div class="card-footer text-right">
-            <a href="#" class="btn btn-outline-primary" style="margin: 0 35px;">Withdraw</a>
-            <a href="#" class="btn btn-outline-primary">Deposit</a>
-          </div>
-      </div>
-      </div>
-    </div>
-  </div>
+
 
 
           <!-- Page Footer-->
-          <footer class="main-footer bg-primary fixed-bottom">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p>CryptoEx &copy; 2018</p>
-                </div>
-                <div class="col-sm-6 text-right">
-                  <p>Design by <a href="#" class="external">CryptoEx</a></p>
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
+                    <footer class="main-footer bg-primary fixed-bottom">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <p>CryptoEx &copy; 2018</p>
+                          </div>
+                          <div class="col-sm-6 text-right">
+                            <p>Design by <a href="#" class="external">CryptoEx</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
               <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"> </script>

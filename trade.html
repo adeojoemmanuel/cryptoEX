@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- animate-->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -44,7 +46,7 @@
                 <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
                  <div class="brand-text brand-big"><strong>CryptoEx</strong></div>
                   <div class="brand-text brand-small"><strong>CE</strong></div></a>
-                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active animated infinite rubberBand"><span></span><span></span><span></span></a>
               </div>
               <!-- Navbar Menu -->
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
@@ -105,10 +107,10 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
-                      <li class="active"><a href="index.html"> <i class="icon-home"></i>Dashboard</a></li>
-                      <li><a href="tables.html"> <i class="icon-grid"></i>Wallets</a></li>
-                      <li><a href="forms.html"> <i class="icon-padnote"></i>Exchange Currency</a></li>
-                      <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Transaction</a></li>
+            <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
+            <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
+            <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
+            <li class="active"><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
@@ -122,31 +124,76 @@
           </header>
 
 
-          <div style="width:80%;margin-top:5%;margin-left:10%">
-          <span style="margin-top:5%;margin-bottom:1%;">I GIVE</span>
-          <div class="input-group input-group-lg">
-            <input class="form-control" type="text" placeholder="Amount" >
-              <select class="form-control form-control-lg" id="inputGroupSelect03">
-                <option selected></option>
-                <option value="1">Naira</option>
-                <option value="2">US Dollars</option>
-                <option value="3">Bitcoin</option>
-                <option value="4">Ethereum</option>
-              </select>
-          </div>
-              <p style="margin-top:1%;">I RECEIVE</p>
-              <div class="input-group input-group-lg">
-                <input class="form-control" type="text" placeholder="Readonly input here…" id="recmon" readonly>
-                  <select class="form-control form-control-lg" id="inputGroupSelect03">
-                    <option selected></option>
-                    <option value="1">Naira</option>
-                    <option value="2">US Dollars</option>
-                    <option value="3">Bitcoin</option>
-                    <option value="4">Ethereum</option>
-                  </select>
-              </div>
-              <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg">Exchange</button>
+          <div class="card" style="height: 95%;">
+            <div class="card-head">
             </div>
+            <div class="card-body">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Buy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sell</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Seller</th>
+                          <th scope="col">Payment Method</th>
+                          <th scope="col">Price/BTC</th>
+                          <th scope="col">Limits</th>
+                          <th scope="col">Buy</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Mark</td>
+                          <td>National Bank Transfer</td>
+                          <td>3000NGN</td>
+                          <td>50-100</td>
+                          <td><button type="button" class="btn btn-primary">Buy</button></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Jacob</td>
+                          <td>National Bank Transfer</td>
+                          <td>4000NGN</td>
+                          <td>50-100</td>
+                          <td><button type="button" class="btn btn-primary">Buy</button></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Larry the Bird</td>
+                          <td>National Bank Transfer</td>
+                          <td>3000NGN</td>
+                          <td>50-100</td>
+                          <td><button type="button" class="btn btn-primary">Buy</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+</div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <form>
+                    <div class="form-group row justify-content-center" style="width:50%; margin-left:25%">
+                      <label class=" col-form-label">Amount</label>
+                        <input type="text" class="form-control" placeholder="Minimum 0.01">
+                        <label class="col-form-label">Payment Method</label>
+                        <select class="form-control">
+                          <option selected>Nationa Bank Transfer</option>
+                        </select>
+                        <label class=" col-form-label">Message</label>
+                          <input type="text" class="form-control" placeholder="Messages">
+                          <input class="btn btn-primary" type="submit" value="Submit" style="margin-top:3%">
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -174,5 +221,10 @@
     <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
+    <script>
+      $( "#toggle-btn" ).click(function() {
+    			$( "#toggle-btn" ).removeClass( "animated" );
+    		});
+      </script>
   </body>
 </html>
