@@ -111,6 +111,7 @@
             <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
             <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
             <li class="active"><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
+            <li><a href="#"> <i class="icon-padnote"></i>Transactions</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
@@ -119,12 +120,12 @@
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Dashboard</h2>
+              <h2 class="no-margin-bottom">Trade</h2>
             </div>
           </header>
 
 
-          <div class="card" style="height: 95%;">
+          <div class="card" style="height: 96%;">
             <div class="card-head">
             </div>
             <div class="card-body">
@@ -146,7 +147,6 @@
                           <th scope="col">Seller</th>
                           <th scope="col">Payment Method</th>
                           <th scope="col">Price/BTC</th>
-                          <th scope="col">Limits</th>
                           <th scope="col">Buy</th>
                         </tr>
                       </thead>
@@ -155,26 +155,23 @@
                           <td scope="row">Mark</td>
                           <td>National Bank Transfer</td>
                           <td>3000NGN</td>
-                          <td>50-100</td>
                           <td><button type="button" class="btn btn-primary">Buy</button></td>
                         </tr>
                         <tr>
                           <td scope="row">Jacob</td>
                           <td>National Bank Transfer</td>
                           <td>4000NGN</td>
-                          <td>50-100</td>
                           <td><button type="button" class="btn btn-primary">Buy</button></td>
                         </tr>
                         <tr>
                           <td scope="row">Larry the Bird</td>
                           <td>National Bank Transfer</td>
                           <td>3000NGN</td>
-                          <td>50-100</td>
                           <td><button type="button" class="btn btn-primary">Buy</button></td>
                         </tr>
                       </tbody>
                     </table>
-</div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <form>
@@ -183,11 +180,12 @@
                         <input type="text" class="form-control" placeholder="Minimum 0.01">
                         <label class="col-form-label">Payment Method</label>
                         <select class="form-control">
-                          <option selected>Nationa Bank Transfer</option>
+                          <option selected>Payment Method</option>
+                          <option>Nationa Bank Transfer</option>
                         </select>
                         <label class=" col-form-label">Message</label>
-                          <input type="text" class="form-control" placeholder="Messages">
-                          <input class="btn btn-primary" type="submit" value="Submit" style="margin-top:3%">
+                          <textarea class="form-control" rows="3"></textarea>
+                          <input class="btn btn-primary" type="submit" value="Submit" style="margin-top:5%">
                       </div>
                   </form>
                 </div>
