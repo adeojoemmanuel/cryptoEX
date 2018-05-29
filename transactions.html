@@ -108,11 +108,10 @@
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
             <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
-            <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
-            <li><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
-            <li class="active"><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
-            <li><a href="#"> <i class="icon-padnote"></i>Transactions</a></li>
-            <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
+            <li><a href="wallet.html"> <i class="icon-grid"></i>Wallet</a></li>
+            <li><a href="exchange.html"> <i class="icon-padnote"></i>Exchange</a></li>
+            <li class="active"><a href="transactions.html"> <i class="fa fa-bar-chart"></i>Transactions</a></li>
+            <li> <a href="settings.html"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
         </nav>
@@ -127,43 +126,31 @@
 
           <div class="card" style="height: 95%;">
             <div class="card-head text-center" style="margin-top:3%">
-              <h3>Transactions</h3>
+              <h3>Exchange History</h3>
             </div>
             <div class="card-body">
-              <table class="table table-hover">
-                <thead>
-                        <tr>
-                          <th scope="col">Seller</th>
-                          <th scope="col">Payment Method</th>
-                          <th scope="col">Pair</th>
-                          <th scope="col">Amount</th>
-                          <th scope="col">Price/BTC</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row">Mark</td>
-                          <td>National Bank Transfer</td>
-                          <td>BTC/NGN</td>
-                          <td>0.2</td>
-                          <td>3000NGN</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">Jacob</td>
-                          <td>National Bank Transfer</td>
-                          <td>BTC/NGN</td>
-                          <td>0.1</td>
-                          <td>4000NGN</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">Larry the Bird</td>
-                          <td>National Bank Transfer</td>
-                          <td>BTC/NGN</td>
-                          <td>0.5</td>
-                          <td>3000NGN</td>
-                        </tr>
-                      </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                            <tr>
+                              <th scope="col">Date</th>
+                              <th scope="col">Pair</th>
+                              <th scope="col">Exchanged</th>
+                              <th scope="col">Exchange Rate</th>
+                              <th scope="col">Received</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">29/05/2018</td>
+                              <td>BTC/USD</td>
+                              <td>0.002</td>
+                              <td>2000000</td>
+                              <td>3000NGN</td>
+                            </tr>
+                          </tbody>
+                  </table>
+              </div>
             </div>
           </div>
 

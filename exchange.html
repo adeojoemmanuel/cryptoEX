@@ -108,9 +108,9 @@
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
             <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
-            <li><a href="wallets.html"> <i class="icon-grid"></i>Wallets</a></li>
-            <li class="active"><a href="instant.html"> <i class="icon-padnote"></i>Instant Exchange</a></li>
-            <li><a href="trade.html"> <i class="fa fa-bar-chart"></i>Trade</a></li>
+            <li><a href="wallet.html"> <i class="icon-grid"></i>Wallet</a></li>
+            <li class="active"><a href="exchange.html"> <i class="icon-padnote"></i>Exchange</a></li>
+            <li><a href="transactions.html"> <i class="fa fa-bar-chart"></i>Transactions</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
@@ -119,7 +119,7 @@
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Instant Exchange</h2>
+              <h2 class="no-margin-bottom">Exchange</h2>
             </div>
           </header>
 
@@ -131,8 +131,8 @@
             <div style="width:80%;margin-top:5%;margin-left:10%">
             <span style="margin-top:5%;margin-bottom:1%;">I GIVE</span>
             <div class="input-group input-group-lg">
-              <input class="form-control" type="text" placeholder="Amount" >
-                <select class="form-control form-control-lg" id="inputGroupSelect03">
+              <input class="form-control" type="text" placeholder="Amount" id="gvemon" >
+                <select class="form-control form-control-lg vali1" id="inputGroupSelect03">
                   <option selected></option>
                   <option value="1">Naira</option>
                   <option value="2">US Dollars</option>
@@ -142,8 +142,8 @@
             </div>
                 <p style="margin-top:1%;">I RECEIVE</p>
                 <div class="input-group input-group-lg">
-                  <input class="form-control" type="text" placeholder="Readonly input here…" id="recmon" readonly>
-                    <select class="form-control form-control-lg" id="inputGroupSelect03">
+                  <input class="form-control" type="text" placeholder="" id="recmon" readonly>
+                    <select class="form-control form-control-lg vali2" id="inputGroupSelect03">
                       <option selected></option>
                       <option value="1">Naira</option>
                       <option value="2">US Dollars</option>
@@ -151,7 +151,7 @@
                       <option value="4">Ethereum</option>
                     </select>
                 </div>
-                <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg">Exchange</button>
+                <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg" id="monbtn">Exchange</button>
               </div>
           </div>
         </div>
@@ -183,9 +183,27 @@
     <!-- Main File-->
     <script src="js/front.js"></script>
     <script>
+    let prc = 1;
+    let rtc = 1;
       $( "#toggle-btn" ).click(function() {
     			$( "#toggle-btn" ).removeClass( "animated" );
     		});
+        $( ".vali2" ).change(function() {
+       $( "select option:selected" ).each(function() {
+         $( this ).text();
+         if($( this ).text()=="Bitcoin"){
+           prc = 800 * rtc;
+             $( "#monbtn" ).trigger( "click" );
+         } else if($( this ).text()=="Ethereum"){
+           prc = 400 * rtc;
+           $( "#monbtn" ).trigger( "click" );
+         }
+       });
+     })
+     .trigger( "change" );
+        $("#monbtn").click(function() {
+      $("#recmon").val($("#gvemon").val()*prc) ;
+     });
       </script>
   </body>
 </html>
