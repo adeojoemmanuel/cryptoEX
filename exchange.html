@@ -107,54 +107,55 @@
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
-                      <li class="active"><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
-                      <li><a href="wallet.html"> <i class="icon-grid"></i>Wallet</a></li>
-                      <li><a href="exchange.html"> <i class="icon-padnote"></i>Exchange</a></li>
-                      <li><a href="transactions.html"> <i class="fa fa-bar-chart"></i>Transactions</a></li>
+            <li><a href="dashboard.html"> <i class="icon-home"></i>Dashboard</a></li>
+            <li><a href="wallet.html"> <i class="icon-grid"></i>Wallet</a></li>
+            <li class="active"><a href="exchange.html"> <i class="icon-padnote"></i>Exchange</a></li>
+            <li><a href="transactions.html"> <i class="fa fa-bar-chart"></i>Transactions</a></li>
             <li> <a href="#"> <i class="icon-flask"></i>Settings </a></li>
             <li> <a href="#"> <i class="icon-mail"></i>Logout </a></li>
           </ul>
         </nav>
-        <div class="content-inner">
+        <div class="content-inner bg-light">
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Dashboard</h2>
+              <h2 class="no-margin-bottom">Exchange</h2>
             </div>
           </header>
 
+
           <div class="card" style="height: 95%;">
-            <div class="card-head" style="margin-top:1%;margin-left:1%;">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Bitcoin</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Ethereum</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
+          <div class="card-head">
+          </div>
+          <div class="card-body">
+            <div style="width:80%;margin-top:5%;margin-left:10%">
+            <span style="margin-top:5%;margin-bottom:1%;">I GIVE</span>
+            <div class="input-group input-group-lg">
+              <input class="form-control" type="text" placeholder="Amount" id="gvemon" >
+                <select class="form-control form-control-lg vali1" id="inputGroupSelect03">
+                  <option selected></option>
+                  <option value="1">Naira</option>
+                  <option value="2">US Dollars</option>
+                  <option value="3">Bitcoin</option>
+                  <option value="4">Ethereum</option>
+                </select>
+            </div>
+                <p style="margin-top:1%;">I RECEIVE</p>
+                <div class="input-group input-group-lg">
+                  <input class="form-control" type="text" placeholder="" id="recmon" readonly>
+                    <select class="form-control form-control-lg vali2" id="inputGroupSelect03">
+                      <option selected></option>
+                      <option value="1">Naira</option>
+                      <option value="2">US Dollars</option>
+                      <option value="3">Bitcoin</option>
+                      <option value="4">Ethereum</option>
+                    </select>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
+                <button type="button" style="margin-left:3%;margin-top:5%;padding: 1% 2%;" class="btn btn-primary btn-lg" id="monbtn">Exchange</button>
               </div>
-            </div>
-            </div>
+          </div>
+        </div>
+
 
 
           <!-- Page Footer-->
@@ -182,9 +183,27 @@
     <!-- Main File-->
     <script src="js/front.js"></script>
     <script>
+    let prc = 1;
+    let rtc = 1;
       $( "#toggle-btn" ).click(function() {
     			$( "#toggle-btn" ).removeClass( "animated" );
     		});
+        $( ".vali2" ).change(function() {
+       $( "select option:selected" ).each(function() {
+         $( this ).text();
+         if($( this ).text()=="Bitcoin"){
+           prc = 800 * rtc;
+             $( "#monbtn" ).trigger( "click" );
+         } else if($( this ).text()=="Ethereum"){
+           prc = 400 * rtc;
+           $( "#monbtn" ).trigger( "click" );
+         }
+       });
+     })
+     .trigger( "change" );
+        $("#monbtn").click(function() {
+      $("#recmon").val($("#gvemon").val()*prc) ;
+     });
       </script>
   </body>
 </html>

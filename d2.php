@@ -19,9 +19,10 @@
 
 
 
-<body class="bg-white">
+<body class="bg-white" style="background: rgb(74,0,224);
+background: linear-gradient(145deg, rgba(74,0,224,1) 0%, rgba(18,255,247,1) 100%);">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand" href="index.php">CryptoEx</a>
     <div class="justify-content-end">
@@ -90,7 +91,7 @@
   </div>
 </div>
 </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">I GIVE
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="width:70%;margin-left:12.5%;">I GIVE
     <div class="input-group">
   <input type="text" class="form-control" aria-label="Text input with dropdown button">
   <div class="input-group-append">
