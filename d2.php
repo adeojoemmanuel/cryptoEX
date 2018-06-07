@@ -20,7 +20,7 @@
 
 
 <body class="bg-white" style="background: rgb(74,0,224);
-background: linear-gradient(145deg, rgba(74,0,224,1) 0%, rgba(18,255,247,1) 100%);">
+background: linear-gradient(145deg, rgba(74,0,224,1) 0%, rgba(18,255,247,1) 100%);"">
 
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
