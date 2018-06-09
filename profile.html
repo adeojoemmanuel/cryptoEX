@@ -118,82 +118,67 @@
             <li> <a href="#"> <i class="fa fa-sign-out"></i>Logout </a></li>
           </ul>
         </nav>
-        <div class="content-inner bg-light">
+        <div class="content-inner bg-white">
           <!-- Page Header-->
           <header class="page-header">
             <div class="container-fluid">
-              <h2 class="no-margin-bottom">Trade</h2>
+              <h2 class="no-margin-bottom">Profile</h2>
             </div>
           </header>
 
-
-          <div class="card" style="height: 95%;">
-            <div class="card-head">
-            </div>
-            <div class="card-body">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Buy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sell</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th scope="col">Seller</th>
-                          <th scope="col">Payment Method</th>
-                          <th scope="col">Price/BTC</th>
-                          <th scope="col">Buy</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row">Mark</td>
-                          <td>National Bank Transfer</td>
-                          <td>3000NGN</td>
-                          <td><button type="button" class="btn btn-primary">Buy</button></td>
-                        </tr>
-                        <tr>
-                          <td scope="row">Jacob</td>
-                          <td>National Bank Transfer</td>
-                          <td>4000NGN</td>
-                          <td><button type="button" class="btn btn-primary">Buy</button></td>
-                        </tr>
-                        <tr>
-                          <td scope="row">Larry the Bird</td>
-                          <td>National Bank Transfer</td>
-                          <td>3000NGN</td>
-                          <td><button type="button" class="btn btn-primary">Buy</button></td>
-                        </tr>
-                      </tbody>
-                    </table>
+            <div class="container-fluid" style="margin-top: 1%;margin-bottom: 10%">
+              <form>
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="exampleInputName">First name</label>
+                      <input class="form-control" id="firstname" name="firstname" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="exampleInputLastName">Last name</label>
+                      <input class="form-control" id="lastname" name="lastname" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
+                    </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                  <form>
-                    <div class="form-group row justify-content-center" style="width:50%; margin-left:25%">
-                      <label class=" col-form-label">Amount</label>
-                        <input type="text" class="form-control" placeholder="Minimum 0.01">
-                        <label class="col-form-label">Payment Method</label>
-                        <select class="form-control">
-                          <option selected>Payment Method</option>
-                          <option>Nationa Bank Transfer</option>
-                        </select>
-                        <label class=" col-form-label">Message</label>
-                          <textarea class="form-control" rows="3"></textarea>
-                          <input class="btn btn-primary" type="submit" value="Submit" style="margin-top:5%">
-                      </div>
-                  </form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input class="form-control" id="email" type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected></option>
+                      <option>Lagos</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputCountry">Country</label>
+                    <select id="inputCountry" class="form-control">
+                      <option selected></option>
+                      <option>Nigeria</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Agree to <a href="terms.html">Terms And Conditions</a> and <a href="privacy.html">Privacy Policy</a>.
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
             </div>
-          </div>
 
 
 

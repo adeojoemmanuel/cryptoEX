@@ -106,8 +106,8 @@ $(document).ready(function () {
     });
 
     // ------------------------------------------------------- //
-    // Footer 
-    // ------------------------------------------------------ //   
+    // Footer
+    // ------------------------------------------------------ //
 
     var contentInner = $('.content-inner');
 
@@ -164,3 +164,7 @@ $(document).ready(function () {
     });
 
 });
+
+$( "#toggle-btn" ).click(function() {
+    $( "#toggle-btn" ).removeClass( "animated" );
+  });

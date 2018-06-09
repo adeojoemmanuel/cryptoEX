@@ -214,28 +214,6 @@
     <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
-    <script>
-    let prc = 1;
-    let rtc = 1;
-      $( "#toggle-btn" ).click(function() {
-    			$( "#toggle-btn" ).removeClass( "animated" );
-    		});
-        $( ".vali2" ).change(function() {
-       $( "select option:selected" ).each(function() {
-         $( this ).text();
-         if($( this ).text()=="Bitcoin"){
-           prc = 800 * rtc;
-             $( "#monbtn" ).trigger( "click" );
-         } else if($( this ).text()=="Ethereum"){
-           prc = 400 * rtc;
-           $( "#monbtn" ).trigger( "click" );
-         }
-       });
-     })
-     .trigger( "change" );
-        $("#monbtn").click(function() {
-      $("#recmon").val($("#gvemon").val()*prc) ;
-     });
-      </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
