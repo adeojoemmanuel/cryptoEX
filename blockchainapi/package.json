@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "basic-auth": "~1.0.3",
-    "bip39": "~2.3.1",
+    "bip39": "~3.1.0",
     "bitcoinjs-lib": "~2.2.0",
     "blockchain-wallet-client": "3.32.4",
     "blockchain.info": "~2.2.2",
